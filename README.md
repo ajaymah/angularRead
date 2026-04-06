@@ -7,3 +7,13 @@ Angular Start
 npm start  or ng serve  
 
 @component() -- decorator  
+
+<img [src]="imagePath"  
+
+export class User {  
+  selectedUser = DUMMY_USERS[0];  
+  get imagePath(){  
+   return '/users/' + this.selectedUser.avatar  
+  }  
+}  
+
